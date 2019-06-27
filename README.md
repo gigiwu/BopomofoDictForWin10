@@ -4,8 +4,12 @@
 
 ## 適用情況
 公司的 Windows 10 電腦升級後突然打不出繁體中文，右下角出現下面這個訊息
+
+Traditional Chinese IME is not ready yet.
+
 ![](FOD.jpg?raw=true)
-請注意: 公司的電腦、升級、繁體中文、右下角訊息，以上情況完全符合才適用。
+
+🌼請注意: 公司的電腦、升級、繁體中文、右下角訊息，以上情況完全符合才適用。
 
 ## 免責聲明
 微軟官方解法請參考: 
@@ -27,4 +31,4 @@ https://docs.microsoft.com/zh-tw/windows-hardware/manufacture/desktop/features-o
 5. 把zh-tw裡面的所有東西複製到你本機上的這個路徑下: c:\windows\system32\zh-tw\
 
 ### 恭喜完成
-你現在可以打字了
+你現在可以打字了🌼
