@@ -1,5 +1,7 @@
 # BopomofoDictForWin10
 
+![](FOD.jpg?raw=true)
+
 ## 免責聲明
 微軟官方解法請參考: 
 https://docs.microsoft.com/zh-tw/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities
