@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Conversion:BuiltInContextDS" CLSID="{8804A84F-24F7-448A-943F-F67ABEF3102D}" />
+    <Node Id="Conversion:BuiltInRespondent" CLSID="{2EFE331A-319D-4927-A7A6-85BDC64E120E}" />
+    <Node Id="Conversion:Decoder" CLSID="{EA206668-C63A-4A05-ABA8-65298048230E}" />
+    <Node Id="Conversion:DDDS" CLSID="{63D6CF0A-104F-45FA-A0ED-8AF48864CD2E}" />
+    <Node Id="Conversion:InputRouter" CLSID="{AAA27100-EFAD-11E3-AC10-0800200C9A66}" />
+    <Node Id="Conversion:Ranker" CLSID="{9F38CF19-B7A6-452A-BF0B-383F3C1D50C2}" />
+    <Node Id="Conversion:ZhuyinMainDS" CLSID="{A36F9519-C183-4DCA-8AFC-B8DE3F71DADA}" />
+    <Node Id="ConversionBopomofo" />
+    <Node Id="Initial:BuiltInContextDS" CLSID="{8804A84F-24F7-448A-943F-F67ABEF3102D}" />
+    <Node Id="Initial:BuiltInRespondent" CLSID="{2EFE331A-319D-4927-A7A6-85BDC64E120E}" />
+    <Node Id="Initial:InputRouter" CLSID="{AAA27100-EFAD-11E3-AC10-0800200C9A66}" />
+    <Node Id="Initial:Ranker" CLSID="{9F38CF19-B7A6-452A-BF0B-383F3C1D50C2}" />
+    <Node Id="Initial:ZhuyinMainDS" CLSID="{A36F9519-C183-4DCA-8AFC-B8DE3F71DADA}" />
+    <Node Id="InitialBopomofo" />
+    <Node Id="Prediction:BuiltInContextDS" CLSID="{8804A84F-24F7-448A-943F-F67ABEF3102D}" />
+    <Node Id="Prediction:BuiltInRespondent" CLSID="{2EFE331A-319D-4927-A7A6-85BDC64E120E}" />
+    <Node Id="Prediction:ChtAPDS" CLSID="{446CDD3B-EFFC-4B23-A625-62CED58C7749}" />
+    <Node Id="Prediction:DDDS" CLSID="{63D6CF0A-104F-45FA-A0ED-8AF48864CD2E}" />
+    <Node Id="Prediction:InputRouter" CLSID="{AAA27100-EFAD-11E3-AC10-0800200C9A66}" />
+    <Node Id="Prediction:Ranker" CLSID="{9F38CF19-B7A6-452A-BF0B-383F3C1D50C2}" />
+    <Node Id="Prediction:ZhuyinMainDS" CLSID="{A36F9519-C183-4DCA-8AFC-B8DE3F71DADA}" />
+    <Node Id="PredictionBopomofo" />
+  </Nodes>
+  <Links>
+    <Link Source="Conversion:BuiltInContextDS" Target="Conversion:InputRouter" />
+    <Link Source="Conversion:Decoder" Target="Conversion:Ranker" />
+    <Link Source="Conversion:DDDS" Target="Conversion:Ranker" />
+    <Link Source="Conversion:InputRouter" Target="Conversion:DDDS" />
+    <Link Source="Conversion:InputRouter" Target="Conversion:ZhuyinMainDS" />
+    <Link Source="Conversion:Ranker" Target="Conversion:BuiltInRespondent" />
+    <Link Source="Conversion:ZhuyinMainDS" Target="Conversion:Decoder" />
+    <Link Source="Conversion:ZhuyinMainDS" Target="Conversion:Ranker" />
+    <Link Source="ConversionBopomofo" Target="Conversion:BuiltInContextDS" />
+    <Link Source="Initial:BuiltInContextDS" Target="Initial:InputRouter" />
+    <Link Source="Initial:InputRouter" Target="Initial:ZhuyinMainDS" />
+    <Link Source="Initial:Ranker" Target="Initial:BuiltInRespondent" />
+    <Link Source="Initial:ZhuyinMainDS" Target="Initial:Ranker" />
+    <Link Source="InitialBopomofo" Target="Initial:BuiltInContextDS" />
+    <Link Source="Prediction:BuiltInContextDS" Target="Prediction:InputRouter" />
+    <Link Source="Prediction:ChtAPDS" Target="Prediction:Ranker" />
+    <Link Source="Prediction:DDDS" Target="Prediction:Ranker" />
+    <Link Source="Prediction:InputRouter" Target="Prediction:ChtAPDS" />
+    <Link Source="Prediction:InputRouter" Target="Prediction:DDDS" />
+    <Link Source="Prediction:InputRouter" Target="Prediction:ZhuyinMainDS" />
+    <Link Source="Prediction:Ranker" Target="Prediction:BuiltInRespondent" />
+    <Link Source="Prediction:ZhuyinMainDS" Target="Prediction:Ranker" />
+    <Link Source="PredictionBopomofo" Target="Prediction:BuiltInContextDS" />
+  </Links>
+  <Properties>
+    <Property Id="CLSID" DataType="System.String" />
+  </Properties>
+</DirectedGraph>
