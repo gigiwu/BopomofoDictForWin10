@@ -3,7 +3,7 @@
 因為最近太多台灣同胞來問我為什麼升級完打不出繁體中文，以下提供個人解法，與本人所屬公司無關💁‍
 
 ## 適用情況
-公司的 Windows 10 電腦升級後突然打不出繁體中文，右下角出現下面這個訊息
+公司的 Windows 10 電腦升級後突然無法用注音、打不出繁體中文、右下角出現下面這個訊息
 
 Traditional Chinese IME is not ready yet.
 
@@ -30,5 +30,7 @@ https://docs.microsoft.com/zh-tw/windows-hardware/manufacture/desktop/features-o
 4. 把DICTS裡面所有東西複製到你本機上的這個路徑下: c:\windows\IME\IMETC\DICTS\
 5. 把zh-tw裡面的所有東西複製到你本機上的這個路徑下: c:\windows\system32\zh-tw\
 
+🌼途中可能會要求你要給權限作變更，請選 Yes
+
 ### 恭喜完成
-你現在可以打字了🌼
+你現在可以打字了🎉
